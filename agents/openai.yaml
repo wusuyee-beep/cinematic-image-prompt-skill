@@ -1,0 +1,8 @@
+interface:
+  display_name: "电影感生图提示词"
+  short_description: "把画面想法整理成空间、镜头、光色稳定的生图提示词"
+  brand_color: "#25324A"
+  default_prompt: "使用 $cinematic-image-prompt 把我的画面想法改写成可直接使用的中文生图提示词。"
+policy:
+  allow_implicit_invocation: true
+
