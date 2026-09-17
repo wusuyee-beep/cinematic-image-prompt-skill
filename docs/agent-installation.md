@@ -13,7 +13,6 @@
 | Qwen Code（千问） | 原生 Skill | 用户级 `~/.qwen/skills/`；项目级 `.qwen/skills/` | 输入 `/skills`，或 `/cinematic-image-prompt` |
 | Qoder | 原生 Skill | Extensions → Skills → Add Skills → Upload Skill；CLI 也支持 `~/.qoder/skills/` | UI 中确认启用；CLI 输入 `/skills reload` |
 | QoderWork 旧版 | 条件兼容 | 优先升级/迁移到新版 Qoder；旧客户端用能力或知识导入 | 用测试请求检查是否读取完整规则 |
-| 豆包 | 系统提示词兼容 | 将适配版粘贴到自定义智能体/专家的系统指令；必要时把 `references/` 作为知识文件 | 用测试请求检查字段、负向约束和审核行为 |
 | 其他 Agent | 自动判断 | 支持 `SKILL.md` 则安装整个目录；否则使用系统提示词适配版 | 运行文末测试请求 |
 
 “原生 Skill”表示平台能发现 `SKILL.md` 并按需加载支持文件；“系统提示词兼容”表示核心写作行为可迁移，但不会自动按相对路径加载参考资料。
@@ -59,7 +58,7 @@ git clone https://github.com/wusuyee-beep/cinematic-image-prompt-skill.git cinem
 
 Qoder 官方说明支持上传 Skill ZIP 或单个 `SKILL.md`；ZIP 根目录应能找到 `SKILL.md`。
 
-## 豆包与不支持 SKILL.md 的平台
+## 不支持 SKILL.md 的平台
 
 1. 打开自定义智能体、专家或角色的系统指令设置。
 2. 复制 [`adapters/system-prompt.zh-CN.md`](../adapters/system-prompt.zh-CN.md) 中代码块的全部内容。
@@ -95,4 +94,4 @@ Qoder 官方说明支持上传 Skill ZIP 或单个 `SKILL.md`；ZIP 根目录应
 - WorkBuddy Skill Marketplace：https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
 - WorkBuddy Creating Custom Skills：https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
 
-WorkBuddy 当前官方格式与开放 `SKILL.md` 格式不同，因此标为转换适配。豆包目前未检索到可核验的第三方 `SKILL.md` 官方导入规范，因此只承诺系统提示词兼容，不声称原生安装。
+WorkBuddy 当前官方格式与开放 `SKILL.md` 格式不同，因此标为转换适配。其他没有公开 `SKILL.md` 导入规范的平台统一使用系统提示词兼容层，不声称原生安装。

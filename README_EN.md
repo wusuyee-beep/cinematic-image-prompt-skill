@@ -21,7 +21,7 @@ The Skill outputs Chinese by default. Ask for English explicitly when needed. It
 
 ## Installation
 
-The repository follows the open `SKILL.md` folder format. See the [multi-agent installation and compatibility guide](docs/agent-installation.md) for Codex, Claude Code, WorkBuddy, CodeBuddy, Qwen Code, Qoder, QoderWork, Doubao, and generic agents.
+The repository follows the open `SKILL.md` folder format. See the [multi-agent installation and compatibility guide](docs/agent-installation.md) for Codex, Claude Code, WorkBuddy, CodeBuddy, Qwen Code, Qoder, QoderWork, and generic agents.
 
 Platforms without native Skill support can use the [self-contained Chinese system-prompt adapter](adapters/system-prompt.zh-CN.md).
 

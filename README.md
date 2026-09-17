@@ -95,7 +95,7 @@ flowchart LR
 
 - **原生 `SKILL.md`**：Codex、Claude Code、CodeBuddy、Qwen Code、Qoder。
 - **平台转换适配**：WorkBuddy 当前官方自定义 Skill 使用 `skill.yml`，由 WorkBuddy 根据本仓库生成并安装。
-- **系统提示词兼容**：暂未公开第三方 `SKILL.md` 导入规范的平台，例如豆包，以及只支持自定义指令/知识库的 Agent。
+- **系统提示词兼容**：只支持自定义指令或知识库、但不原生读取 `SKILL.md` 的其他 Agent。
 
 最通用的社区安装方式：
 
@@ -152,3 +152,7 @@ cinematic-image-prompt-skill/
 - [Seedance 2.5 电影感视频提示词 Skill](https://github.com/wusuyee-beep/seedance-2.5-cinematic-prompt-skill)：以 DiDi_OK 六个 Case 为主要规则来源的视频提示词项目。
 
 如果它帮你稳定产出了更好的画面，欢迎 Star、提交真实 Case，或把一次失败生成整理成可复现问题。
+
+## License
+
+[MIT](LICENSE)
