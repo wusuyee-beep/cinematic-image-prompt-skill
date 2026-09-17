@@ -13,6 +13,7 @@ description: 将简短想法、参考图、脚本片段或商品需求改写成�
 - 涉及焦段、透视、景别、构图、光线或色彩时读取 `references/visual-language.md`，避免概念误用。
 - 涉及多主体、复杂空间、图中文字、参考图或系列一致性时读取 `references/model-failures.md`。
 - 用户要求示例、模板或需要校准输出密度时读取 `references/examples.md`。
+- 用户要求查看真实生成案例、从成片反推静帧，或需要校准“品牌发布会侧面近景”时读取 `cases/README.md`，再只打开匹配的案例。案例中的人物年龄、服装、颜色和构图不是全局硬规则。
 - 交付前读取 `references/review-rubric.md` 并内部评分；硬门槛失败或低于 90 分时先修订。
 - 用户要求依据或来源时读取 `references/sources.md`。
 

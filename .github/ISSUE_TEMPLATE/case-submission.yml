@@ -1,0 +1,39 @@
+name: 提交真实 Case
+description: 提交可公开、可复现的提示词与生成结果
+title: "[Case] "
+labels: ["case"]
+body:
+  - type: textarea
+    id: brief
+    attributes:
+      label: 原始需求
+      description: 用户最初想生成什么画面？
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 完整提示词
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型与版本
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 结果、成功点与失败点
+      description: 可拖入你有权公开的图片或关键帧。
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: 内容权利确认
+      options:
+        - label: 我有权公开并允许本项目展示所提交的素材。
+          required: true

@@ -19,3 +19,13 @@
 
 教材中的镜头语言是创作语法，不是情绪词典。模型厂商的提示建议也不是跨模型保证。本 skill 将二者转化为可观察、可验证的画面约束，并通过交付前审核减少冲突。
 
+## Agent Skills 与平台适配
+
+- Agent Skills open format. Skill 以包含 `SKILL.md` 的目录为核心，并可附带脚本、参考资料和模板。https://agentskills.io/home
+- Tencent CodeBuddy, *Code Skills (Skills System)*. 用户级目录为 `~/.codebuddy/skills/`，项目级目录为 `.codebuddy/skills/`。https://www.codebuddy.ai/docs/cli/skills
+- Tencent WorkBuddy, *Creating Custom Skills*. 当前官方说明自定义 Skill 通常包含 `skill.yml`、实现文件和 README，并通过产品内创建/安装流程管理。https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+- Qwen Code, *Agent Skills*. 个人 Skill 位于 `~/.qwen/skills/`，项目 Skill 位于 `.qwen/skills/`。https://qwenlm.github.io/qwen-code-docs/zh/users/features/skills/
+- Qoder, *Skills*. 支持在 Extensions → Skills 中创建或上传 Skill ZIP / `SKILL.md`。https://docs.qoder.com/qoder/skills
+- Qoder CLI, *Skills*. 用户级目录为 `~/.qoder/skills/`，项目级目录为 `.qoder/skills/`。https://docs.qoder.com/cli/Skills
+
+平台安装信息会随版本变化。`docs/agent-installation.md` 只把查到官方路径或官方界面说明的平台标为原生支持；没有官方导入规范的平台使用系统提示词兼容层。

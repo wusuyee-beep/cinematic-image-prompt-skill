@@ -1,0 +1,26 @@
+name: 提议规则修正
+description: 用可复现失败说明现有规则需要怎样调整
+title: "[Rule] "
+labels: ["rule"]
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前问题
+      description: 哪条规则或输出行为失效？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现
+      description: 提供输入、实际输出与期望输出。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议修改
+      description: 说明它应是硬规则、条件规则还是建议。
+    validations:
+      required: true
